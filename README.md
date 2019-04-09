@@ -32,3 +32,14 @@ FlutterShareGo.shareToTwitterPlatform("test share to twitter content", "http://t
 欢迎大家支持我的网站
 [网站](https://tryenough.com),
 
+注意：
+
+iOS上使用时需要适配iOS9，在iOS文件夹下的Runner文件下的Info.plist文件中增加如下配置：(不明白可以看文章：http://tryenough.com/ios-installcheck)
+
+```
+<key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fb</string>
+        <string>twitter</string>
+    </array>
+```
